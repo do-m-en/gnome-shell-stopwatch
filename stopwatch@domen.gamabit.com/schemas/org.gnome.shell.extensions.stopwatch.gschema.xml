@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+  <schema path="/org/gnome/shell/extensions/stopwatch/" id="org.gnome.shell.extensions.stopwatch">
+    <key type="b" name="display-milliseconds">
+      <default>true</default>
+      <summary>If true, adds milliseconds to stopwatch.</summary>
+    </key>
+  </schema>
+</schemalist>

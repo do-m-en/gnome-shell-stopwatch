@@ -1,0 +1,3 @@
+#: prefs.js:52
+msgid "Display milliseconds"
+msgstr "Affiche les millisecondes"

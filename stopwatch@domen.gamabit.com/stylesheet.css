@@ -1,0 +1,26 @@
+.stopwatch-button {
+  font-weight: bold;
+  border: 1px solid #8b8b8b;
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba( 255, 255, 255, 0.2 );
+  background-gradient-end: rgba( 255, 255, 255, 0 );
+  border-radius: 18px;
+  padding: 0px 10px;
+}
+
+.stopwatch-button:hover {
+  background-gradient-start: rgba( 255, 255, 255, 0.3 );
+  background-gradient-end: rgba( 255, 255, 255, 0.1 );
+}
+
+.stopwatch-button-icon {
+  icon-size: 1.09em;
+}
+
+.stopwatch-label {
+  padding: 0px 3px;
+}
+
+.stopwatch-bin {
+  padding: 0px 3px;
+}
