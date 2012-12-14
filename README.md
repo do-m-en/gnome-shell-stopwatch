@@ -6,7 +6,7 @@ Simple gnome-shell stopwatch extension
 Tested on gnome-shell versions
 =====================
 
-3.5.91
+3.6
 
 Installation
 =====================
@@ -25,4 +25,6 @@ GPL 2
 TODO
 =====================
 
-Current version is linked to system clock so the elapsed time calculation returns wrong value if you change it while running the extension.
+-Current version is linked to system clock so the elapsed time calculation returns wrong value if you change it while running the extension.
+-Currently stopwatch restarts if screen locks.
+-Stopwatch icon should have different color when active/paused.

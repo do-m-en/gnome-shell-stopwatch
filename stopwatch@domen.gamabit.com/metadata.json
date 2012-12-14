@@ -1,1 +1,10 @@
-{"shell-version": ["3.5.91"], "uuid": "stopwatch@domen.gamabit.com", "name": "Stopwatch", "description": "Measure the duration of your tasks."}
+{
+  "shell-version": [
+    "3.6"
+  ],
+  "uuid": "stopwatch@domen.gamabit.com",
+  "name": "Stopwatch",
+  "description": "Measure the duration of your tasks.",
+  "url": "https://github.com/do-m-en/gnome-shell-stopwatch",
+  "version": "2"
+}

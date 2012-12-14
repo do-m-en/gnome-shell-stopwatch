@@ -35,17 +35,17 @@ function enable() {
   stopwatch = new Stopwatch( settings.getSettings( extensionId ).get_boolean( 'display-milliseconds' ) );
   settings.addSettingsChangedEventHandler( stopwatch, 'setDisplayMilliseconds', 'display-milliseconds' );
 
-  Main.panel._centerBox.insert_child_at_index( stopwatch.actor, 1 );
+  Main.panel._centerBox.insert_child_at_index( stopwatch.container, 1 );
   Main.panel.menuManager.addMenu( stopwatch.menu );
 }
 
 function disable() {
-  Main.panel._centerBox.remove_child( stopwatch.actor );
+  Main.panel._centerBox.remove_child( stopwatch.container );
   Main.panel.menuManager.removeMenu( stopwatch.menu );
 
   stopwatch.destruct();
-  stopwatch = null;
+  delete stopwatch;
 
   settings.destruct();
-  settings = null;
+  delete settings;
 }

@@ -40,6 +40,10 @@ const Stopwatch = new Lang.Class( {
   },
 
   destruct: function() {
+    // close menu and hide stopwatch
+    this.menu.close();
+    this.container.hide();
+
     this._startPauseButton.disconnect( this._startPauseButtonConnection );
     this._restartButton.disconnect( this._restartButtonConnection );
   },
@@ -84,6 +88,9 @@ const Stopwatch = new Lang.Class( {
     box.add( this._wrapButtonIntoBin( this._restartButton ) );
 
     Mainloop.timeout_add( 1, Lang.bind( this, this._redrawStopwatch ) );
+
+    // show stopwatch
+    this.container.show();
   },
 
   _wrapButtonIntoBin: function( button ) {
